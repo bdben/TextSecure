@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.thoughtcrime.securesms.ConversationItem android:id="@+id/conversation_item"
+<ca.rmc.smsencryptor.ConversationItem android:id="@+id/conversation_item"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:paddingRight="10dip"
@@ -25,7 +25,7 @@
         android:layout_marginRight="0dp"
         android:orientation="horizontal">
 
-        <org.thoughtcrime.securesms.components.ForegroundImageView
+        <ca.rmc.smsencryptor.components.ForegroundImageView
             android:id="@+id/contact_photo"
             android:foreground="@drawable/contact_photo_background"
             android:layout_width="40dp"
@@ -173,4 +173,4 @@
         </LinearLayout>
 
     </RelativeLayout>
-</org.thoughtcrime.securesms.ConversationItem>
+</ca.rmc.smsencryptor.ConversationItem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.thoughtcrime.securesms.IdentityKeyView xmlns:android="http://schemas.android.com/apk/res/android"
+<ca.rmc.smsencryptor.IdentityKeyView xmlns:android="http://schemas.android.com/apk/res/android"
                                             android:layout_width="fill_parent"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="10dip">
@@ -47,4 +47,4 @@
               android:layout_toLeftOf="@id/date"
               android:ellipsize="end" />
 
-</org.thoughtcrime.securesms.IdentityKeyView>
+</ca.rmc.smsencryptor.IdentityKeyView>

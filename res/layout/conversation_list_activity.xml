@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/fragment_content"
-            android:name="org.thoughtcrime.securesms.ConversationListFragment"
+            android:name="ca.rmc.smsencryptor.ConversationListFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

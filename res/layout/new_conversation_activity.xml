@@ -5,7 +5,7 @@
               android:orientation="vertical"
               xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <org.thoughtcrime.securesms.components.SingleRecipientPanel android:id="@+id/recipients"
+    <ca.rmc.smsencryptor.components.SingleRecipientPanel android:id="@+id/recipients"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/contact_selection_list_fragment"
-        android:name="org.thoughtcrime.securesms.PushContactSelectionListFragment">
+        android:name="ca.rmc.smsencryptor.PushContactSelectionListFragment">
         </fragment>
 
 </LinearLayout>

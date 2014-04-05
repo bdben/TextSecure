@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TextSecure</string>
+    <string name="app_name">SMS Encryptor</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete">Delete</string>
@@ -35,7 +35,7 @@
     <string name="ApplicationPreferencesActivity_sms_enabled">Incoming SMS Enabled</string>
     <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Touch to change your default SMS app</string>
     <string name="ApplicationPreferencesActivity_sms_disabled">Incoming SMS Disabled</string>
-    <string name="ApplicationPreferencesActivity_touch_to_make_textsecure_your_default_sms_app">Touch to make TextSecure your default SMS app</string>
+    <string name="ApplicationPreferencesActivity_touch_to_make_textsecure_your_default_sms_app">Touch to make SMS Encryptor your default SMS app</string>
 
     <!-- AttachmentTypeSelectorAdapter -->
 
@@ -124,7 +124,7 @@
     <string name="ExportFragment_export">Export</string>
     <string name="ExportFragment_export_plaintext_to_sd_card">Export Plaintext To SD Card?</string>
     <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Warning, this will
-        export the plaintext contents of your TextSecure messages to the SD card.
+        export the plaintext contents of your SMS Encryptor messages to the SD card.
     </string>
     <string name="ExportFragment_cancel">Cancel</string>
     <string name="ExportFragment_exporting">Exporting</string>
@@ -159,7 +159,7 @@
     <!-- ImportFragment -->
     <string name="ImportFragment_import_system_sms_database">Import System SMS Database?</string>
     <string name="ImportFragment_this_will_import_messages_from_the_system">This will import
-        messages from the system\'s default SMS database to TextSecure. If you\'ve previously
+        messages from the system\'s default SMS database to SMS Encryptor. If you\'ve previously
         imported the system\'s SMS database, importing again will result in duplicated messages.
     </string>
     <string name="ImportFragment_import">Import</string>
@@ -167,7 +167,7 @@
     <string name="ImportFragment_restore_encrypted_backup">Restore Encrypted Backup?</string>
     <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
         Restoring an encrypted backup will completely replace your existing keys, preferences, and
-        messages. You will lose any information that\'s in your current TextSecure install but not
+        messages. You will lose any information that\'s in your current SMS Encryptor install but not
         in the backup.
     </string>
     <string name="ImportFragment_restore">Restore</string>
@@ -212,13 +212,13 @@
     <!-- PromptMmsActivity -->
     <string name="PromptMmsActivity_you_must_specify_an_mmsc_url_for_your_carrier">You must specify an MMSC URL for your carrier.</string>
     <string name="PromptMmsActivity_mms_settings_updated">MMS Settings Updated</string>
-    <string name="PromptMmsActivity_you_can_modify_these_values_from_the_textsecure_settings_menu_at_any_time_">You can modify these values from the TextSecure settings menu at any time.</string>
+    <string name="PromptMmsActivity_you_can_modify_these_values_from_the_textsecure_settings_menu_at_any_time_">You can modify these values from the SMS Encryptor settings menu at any time.</string>
 
     <!-- ReceiveKeyActivity -->
     <string name="ReceiveKeyActivity_the_signature_on_this_key_exchange_is_different">The
         signature on this key exchange is different than what you\'ve previously received from this
         contact. This could either mean that someone is trying to intercept your communication, or
-        that this contact simply re-installed TextSecure and now has a new identity key.
+        that this contact simply re-installed TextSecure/SMS Encryptor and now has a new identity key.
     </string>
     <string name="ReceiveKeyActivity_you_may_wish_to_verify_this_contact">You may wish to verify
         this contact.
@@ -281,7 +281,7 @@
     <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">You\'ve already recently requested a voice call. You can request another in 20 minutes.</string>
     <string name="RegistrationProgressActivity_verifying_voice_code">Verifying voice code...</string>
     <string name="RegistrationProgressActivity_registration_conflict">Registration conflict</string>
-    <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">This number is already registered on a different TextSecure server (CyanogenMod?). You must unregistering there before registering here.</string>
+    <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">This number is already registered on a different TextSecure server (CyanogenMod?). You must unregister there before registering here.</string>
 
     <!-- RegistrationService -->
     <string name="RegistrationService_registration_complete">Registration Complete</string>
@@ -370,7 +370,7 @@
     <!-- KeyCachingService -->
     <string name="KeyCachingService_textsecure_passphrase_cached">Touch to open.</string>
     <string name="KeyCachingService_textsecure_passphrase_cached_with_lock">Touch to open, or touch the lock to close.</string>
-    <string name="KeyCachingService_passphrase_cached">TextSecure is unlocked</string>
+    <string name="KeyCachingService_passphrase_cached">SMS Encryptor is unlocked</string>
     <string name="KeyCachingService_lock">Lock with passphrase</string>
 
     <!-- MessageNotifier -->
@@ -404,7 +404,7 @@
     <string name="SmsReceiver_currently_unable_to_send_your_sms_message">Currently unable to send your SMS message. It will be sent once service becomes available.</string>
 
     <!-- QuickResponseService -->
-    <string name="QuickResponseService_sorry_quick_response_is_not_yet_supported_by_textsecure">Sorry, Quick Response is not yet supported by TextSecure!</string>
+    <string name="QuickResponseService_sorry_quick_response_is_not_yet_supported_by_textsecure">Sorry, Quick Response is not yet supported by SMS Encryptor!</string>
 
     <!-- auto_initiate_activity -->
     <string name="auto_initiate_activity__you_have_received_a_message_from_someone_who_supports_textsecure_encrypted_sessions_would_you_like_to_initiate_a_secure_session">You have received a message from someone who supports TextSecure encrypted sessions.  Would you like to initiate a secure session?</string>
@@ -478,7 +478,7 @@
     <string name="log_submit_activity__posting_logs">Posting logs to pastebin&#8230;</string>
 
     <!-- database_migration_activity -->
-    <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Would you like to import your existing text messages into TextSecure\'s encrypted database?</string>
+    <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Would you like to import your existing text messages into SMS Encryptor\'s encrypted database?</string>
     <string name="database_migration_activity__the_default_system_database_will_not_be_modified">The default system database will not be modified or altered in any way.</string>
     <string name="database_migration_activity__skip">Skip</string>
     <string name="database_migration_activity__import">Import</string>
@@ -501,7 +501,7 @@
     </string>
     <string name="import_fragment__import_encrypted_backup">Import Encrypted Backup</string>
     <string name="import_fragment__restore_a_previously_exported_encrypted_textsecure_backup">
-        Restore a previously exported encrypted TextSecure backup.
+        Restore a previously exported encrypted SMS Encryptor backup.
     </string>
     <string name="import_fragment__import_plaintext_backup">Import Plaintext Backup</string>
     <string name="import_fragment__import_a_plaintext_backup_file">
@@ -513,11 +513,11 @@
     <string name="mms_preferences_activity__manual_mms_settings_are_required">Manual MMS settings are required for your phone.</string>
 
     <!-- prompt_passphrase_activity -->
-    <string name="prompt_passphrase_activity__textsecure_passphrase">TEXTSECURE PASSPHRASE</string>
+    <string name="prompt_passphrase_activity__textsecure_passphrase">SMS ENCRYPTOR PASSPHRASE</string>
     <string name="prompt_passphrase_activity__unlock">Unlock</string>
 
     <!-- prompt_mms_activity -->
-    <string name="prompt_mms_activity__textsecure_requires_mms_settings_to_deliver_media_and_group_messages">TextSecure requires MMS settings to deliver media and group messages through your wireless carrier. Your device does not make this information available, which is occasionally true for locked devices and other restrictive configurations.</string>
+    <string name="prompt_mms_activity__textsecure_requires_mms_settings_to_deliver_media_and_group_messages">SMS Encryptor requires MMS settings to deliver media and group messages through your wireless carrier. Your device does not make this information available, which is occasionally true for locked devices and other restrictive configurations.</string>
     <string name="prompt_mms_activity__to_send_media_and_group_messages_click_ok">To send media and group messages, click \'OK\' and complete the requested settings. The MMS settings for your carrier can generally be located by searching for \'your carrier APN\'. You will only need to do this once.</string>
     <string name="prompt_mms_activity__mmsc_url_required">MMSC URL (REQUIRED):</string>
     <string name="prompt_mms_activity__mms_proxy_host_optional">MMS PROXY HOST (OPTIONAL):</string>
@@ -528,8 +528,8 @@
 
     <!-- registration_activity -->
     <string name="registration_activity__textsecure_can_use_instant_messages_to_avoid_sms_charges_when_communicating_with_other_textsecure_users">
-        TextSecure can use instant messages to increase privacy and avoid SMS charges when communicating with other
-        TextSecure users. To enable this feature, please verify your country code and phone number.
+        SMS Encryptor can use instant messages to increase privacy and avoid SMS charges when communicating with other
+        TextSecure/SMS Encryptor users. To enable this feature, please verify your country code and phone number.
     </string>
     <string name="registration_activity__your_country">YOUR COUNTRY</string>
     <string name="registration_activity__your_country_code_and_phone_number">YOUR COUNTRY CODE AND
@@ -558,7 +558,7 @@
     </string>
     <string name="registration_problems__google_voice">Google Voice.</string>
     <string name="registration_problems__textsecure_will_not_work_with_google_voice_numbers">
-        TextSecure will not work with Google Voice numbers.
+        SMS Encryptor will not work with Google Voice numbers.
     </string>
 
     <!-- registration_progress_activity -->
@@ -572,7 +572,7 @@
     <string name="registration_progress_activity__edit_number">Edit number</string>
     <string name="registration_progress_activity__connectivity_error">Connectivity error.</string>
     <string name="registration_progress_activity__textsecure_was_unable_to_connect_to_the_push_service">
-        TextSecure was unable to connect to the push service.
+        SMS Encryptor was unable to connect to the push service.
     </string>
     <string name="registration_progress_activity__some_possible_problems_include">Some possible
         problems include:
@@ -581,7 +581,7 @@
         connectivity.
     </string>
     <string name="registration_progress_activity__your_device_needs_network_connectivity">Your
-        device needs network connectivity in order to use this TextSecure feature. Check to ensure
+        device needs network connectivity in order to use this SMS Encryptor feature. Check to ensure
         that it is connected to 3G or Wifi.
     </string>
     <string name="registration_progress_activity__restrictive_firewall">Restrictive firewall.
@@ -591,7 +591,7 @@
         the TextSecure server. Try another network or mobile data.
     </string>
     <string name="registration_progress_activity__textsecure_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-        TextSecure will now automatically verify your number with a confirmation SMS message.
+        SMS Encryptor will now automatically verify your number with a confirmation SMS message.
     </string>
     <string name="registration_progress_activity__connecting">Connecting...</string>
     <string name="registration_progress_activity__waiting_for_sms_verification">Waiting for SMS
@@ -602,7 +602,7 @@
         could take a moment. Please be patient, we\'ll notify you when verification is complete.
     </string>
     <string name="registration_progress_activity__textsecure_timed_out_while_waiting_for_a_verification_sms_message">
-        TextSecure timed out while waiting for a verification SMS message.
+        SMS Encryptor timed out while waiting for a verification SMS message.
     </string>
     <string name="registration_progress_activity__sms_verification_failed">SMS verification
         failed.
@@ -655,8 +655,8 @@
     <string name="preferences__push_sms_category">Push and SMS</string>
     <string name="preferences__pref_all_sms_title">Receive all SMS</string>
     <string name="preferences__pref_all_mms_title">Receive all MMS</string>
-    <string name="preferences__use_textsecure_for_viewing_and_storing_all_incoming_text_messages">Use TextSecure for viewing and storing all incoming text messages</string>
-    <string name="preferences__use_textsecure_for_viewing_and_storing_all_incoming_multimedia_messages">Use TextSecure for viewing and storing all incoming multimedia messages</string>
+    <string name="preferences__use_textsecure_for_viewing_and_storing_all_incoming_text_messages">Use SMS Encryptor for viewing and storing all incoming text messages</string>
+    <string name="preferences__use_textsecure_for_viewing_and_storing_all_incoming_multimedia_messages">Use SMS Encryptor for viewing and storing all incoming multimedia messages</string>
     <string name="preferences__input_settings">Input Settings</string>
     <string name="preferences__enable_enter_key_title">Enable Enter key</string>
     <string name="preferences__replace_smiley_with_enter_key">Replace the smiley key with an enter key</string>
@@ -733,13 +733,13 @@
     <string name="preferences__default">Default</string>
     <string name="preferences__language">Language</string>
     <string name="preferences__make_default_sms_app">Set as default SMS app</string>
-    <string name="preferences__make_textsecure_the_default_sms_mms_app">Make TextSecure the default SMS/MMS application for your system.</string>
+    <string name="preferences__make_textsecure_the_default_sms_mms_app">Make SMS Encryptor the default SMS/MMS application for your system.</string>
     <string name="preferences__use_data_channel">Push messages</string>
     <string name="preferences__use_the_data_channel_for_communication_with_other_textsecure_users">
-        Increase privacy and avoid SMS fees by using the data channel for communication with other TextSecure users
+        Increase privacy and avoid SMS fees by using the data channel for communication with other TextSecure/SMS Encryptor users
     </string>
     <string name="preferences__allow_sms_fallback">Allow outgoing SMS to</string>
-    <string name="preferences__allow_sms_fallback_disabled_reason">TextSecure is currently your default SMS app. Please set another default SMS app first to change this preference.</string>
+    <string name="preferences__allow_sms_fallback_disabled_reason">SMS Encryptor is currently your default SMS app. Please set another default SMS app first to change this preference.</string>
     <string name="preferences__refresh_push_directory">Refresh Push Directory</string>
     <string name="preferences__submit_debug_log">Submit debug log</string>
     <string name="preferences__sms_outgoing_push_users">TextSecure users</string>

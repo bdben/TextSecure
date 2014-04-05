@@ -52,7 +52,7 @@ Downloads
 
 TextSecure can be downloaded from the Play Store here:
 
-https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms
+https://play.google.com/store/apps/details?id=ca.rmc.smsencryptor
 
 Cryptography Notice
 ------------

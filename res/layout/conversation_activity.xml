@@ -6,7 +6,7 @@
     android:background="?conversation_background"
     android:orientation="vertical">
 
-    <org.thoughtcrime.securesms.components.RecipientsPanel
+    <ca.rmc.smsencryptor.components.RecipientsPanel
             android:id="@+id/recipients"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
 
         <fragment
                 android:id="@+id/fragment_content"
-                android:name="org.thoughtcrime.securesms.ConversationFragment"
+                android:name="ca.rmc.smsencryptor.ConversationFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/bottom_container" />
@@ -76,7 +76,7 @@
                     android:orientation="horizontal"
                     android:background="?conversation_editor_background">
 
-                <org.thoughtcrime.securesms.components.EmojiToggle
+                <ca.rmc.smsencryptor.components.EmojiToggle
                         android:id="@+id/emoji_toggle"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -127,7 +127,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <org.thoughtcrime.securesms.components.EmojiDrawer
+    <ca.rmc.smsencryptor.components.EmojiDrawer
             android:id="@+id/emoji_drawer"
             android:visibility="gone"
             android:layout_weight="1.1"

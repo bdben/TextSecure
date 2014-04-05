@@ -21,7 +21,7 @@
                     android:title="@string/preferences__make_default_sms_app"
                     android:summary="@string/preferences__make_textsecure_the_default_sms_mms_app" />
 
-        <org.thoughtcrime.securesms.components.OutgoingSmsPreference
+        <ca.rmc.smsencryptor.components.OutgoingSmsPreference
                         android:key="pref_outgoing_sms"
                         android:title="@string/preferences__allow_sms_fallback" />
 
@@ -43,7 +43,7 @@
                           android:entries="@array/pref_led_color_entries"
                           android:entryValues="@array/pref_led_color_values" />
 
-        <org.thoughtcrime.securesms.preferences.LedBlinkPatternListPreference
+        <ca.rmc.smsencryptor.preferences.LedBlinkPatternListPreference
                           android:key="pref_led_blink"
                           android:defaultValue="500,2000"
                           android:title="@string/preferences__pref_led_blink_title"
@@ -146,7 +146,7 @@
                            android:summary="@string/preferences__forget_passphrase_from_memory_after_some_interval"
                            android:dependency="pref_disable_passphrase"/>
 
-       <org.thoughtcrime.securesms.preferences.PassphraseTimeoutPreference
+       <ca.rmc.smsencryptor.preferences.PassphraseTimeoutPreference
                android:key="pref_timeout_interval"
                android:defaultValue="300"
                android:title="@string/preferences__pref_timeout_interval_title"
