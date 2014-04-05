@@ -4,6 +4,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.util.Log;
 
 import org.whispersystems.textsecure.crypto.MasterSecret;
@@ -64,4 +65,26 @@ public class NotificationState {
 
     return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
   }
+
+    /**
+     * Returns the callback PendingIntent for the message sender if only one thread exists.
+     * @param context the context from which to launch the intent
+     * @return a PendingIntent to launch a phone call activity, or null if there is more than one
+     * thread
+     */
+    public PendingIntent getCallbackIntent(Context context) {
+        if (threads.size() > 1) {
+            Log.v("NotificationState", "More than one thread");
+            return null;
+        }
+
+        // Create url string of the from "tel:1234567890"
+        String uri = "tel:"+notifications.get(0).getIndividualRecipient().getNumber().replaceAll("[^0-9|\\+]", "");
+        Log.v("NotificationState", "New URI: "+uri);
+
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
+        Log.v("NotificationState", "Parsed URI");
+
+        return PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+    }
 }

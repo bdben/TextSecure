@@ -151,6 +151,13 @@ public class MessageNotifier {
     }
   }
 
+    /**
+     * Sends notification for a single message thread (i.e. one recipient)
+     * @param context
+     * @param masterSecret
+     * @param notificationState
+     * @param signal
+     */
   private static void sendSingleThreadNotification(Context context,
                                                    MasterSecret masterSecret,
                                                    NotificationState notificationState,
@@ -176,6 +183,12 @@ public class MessageNotifier {
     if (masterSecret != null) {
       builder.addAction(R.drawable.check, context.getString(R.string.MessageNotifier_mark_as_read),
                         notificationState.getMarkAsReadIntent(context, masterSecret));
+    }
+
+    PendingIntent callBackIntent = notificationState.getCallbackIntent(context);
+    if (callBackIntent != null) {
+        // Calls sender if only one thread exists
+        builder.addAction(R.drawable.ic_menu_call_holo_dark, context.getString(R.string.MessageNotifier_call_back), callBackIntent);
     }
 
     SpannableStringBuilder content = new SpannableStringBuilder();
@@ -213,7 +226,7 @@ public class MessageNotifier {
     builder.setContentText(String.format(context.getString(R.string.MessageNotifier_most_recent_from_s),
                                          notifications.get(0).getIndividualRecipientName()));
     builder.setContentIntent(PendingIntent.getActivity(context, 0, new Intent(context, RoutingActivity.class), 0));
-    
+
     builder.setContentInfo(String.valueOf(notificationState.getMessageCount()));
 
     if (masterSecret != null) {
@@ -250,6 +263,7 @@ public class MessageNotifier {
       if (ringtone == null)
         return;
 
+        // Play the notification ringtone
       Uri uri            = Uri.parse(ringtone);
       MediaPlayer player = new MediaPlayer();
       player.setAudioStreamType(AudioManager.STREAM_NOTIFICATION);

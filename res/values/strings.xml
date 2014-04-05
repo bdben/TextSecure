@@ -383,6 +383,7 @@
     <string name="MessageNotifier_error_delivering_message">Error delivering message.</string>
     <string name="MessageNotifier_mark_all_as_read">Mark all as read</string>
     <string name="MessageNotifier_mark_as_read">Mark as read</string>
+    <string name="MessageNotifier_call_back">Call back</string>
 
     <!-- ViewLocalIdentityActivity -->
     <string name="ViewLocalIdentityActivity_regenerating">Regenerating...</string>
