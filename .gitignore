@@ -6,6 +6,7 @@ bin/
 gen/
 .idea/
 *.iml
+Thumbs.db
 out
 tests
 lint.xml
